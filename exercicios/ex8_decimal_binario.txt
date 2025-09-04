@@ -1,0 +1,19 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro n
+        cadeia binario
+        binario = ""
+
+        escreva("Digite um número decimal: ")
+        leia(n)
+
+        enquanto (n > 0)
+        {
+            binario = (n % 2) + binario
+            n = n / 2
+        }
+        escreva("Binário: ", binario, "\n")
+    }
+}

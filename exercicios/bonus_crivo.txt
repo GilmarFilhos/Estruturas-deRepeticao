@@ -1,0 +1,37 @@
+programa
+{
+    funcao inicio()
+    {
+        inteiro n, i, j
+        logico vetor[1000] // tamanho máximo
+
+        escreva("Digite N: ")
+        leia(n)
+
+        para (i = 2; i <= n; i++)
+        {
+            vetor[i] = verdadeiro
+        }
+
+        para (i = 2; i * i <= n; i++)
+        {
+            se (vetor[i])
+            {
+                para (j = i * i; j <= n; j = j + i)
+                {
+                    vetor[j] = falso
+                }
+            }
+        }
+
+        escreva("Primos: ")
+        para (i = 2; i <= n; i++)
+        {
+            se (vetor[i])
+            {
+                escreva(i, " ")
+            }
+        }
+        escreva("\n")
+    }
+}
